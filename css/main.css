@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif !important;
+	color: #fff;
+}
+
+.container-flex-row {
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+
+}
+
+.container-flex-column {
+  display: flex;
+	flex-direction:column;
+  justify-content: center;
+	padding: 2em;
+  align-items: center;
+}
+
+
+.vh100 {
+	height: 100vh;
+}
+
+
+.background_taxi {
+  background-image: url(../assets/images/ciudad.jpg);
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-size:cover;
+	}
+
+.grad {
+	background:linear-gradient(to bottom right, #530060, #e8098b);
+	}
+
+
+.buttons-register {
+	padding: 2em;
+}
+
+.btn-success {
+	padding: 0.5em;
+	margin-bottom: 3em;
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 1em;
+  font-weight: bolder;
+  padding: 1em;
+}
+
+
+
+.title {
+	padding: 0.5em;
+	margin-bottom: 1em;
+}
+
+.signup {
+ background: green;
+}
+
+.logo-white{
+  margin-top: 15%;
+  margin-bottom: 90%;
+  width: 50%;
+  height: auto;
+}
