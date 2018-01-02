@@ -1,15 +1,16 @@
 $(document).ready(function() {
-  console.log(window.location);
-  setTimeout(function() {
-    window.location.href = 'signup.html';
-  }, 8000);
-  /* // Seleccionamos los elementos del DOM
-  var $btnSignUp = $('#signup');
-  var $btnLogin = $('#login');
-  // Asociamos el evento click
-  $btnSignUp.on('click', function() {
-    alert('hola');
-  }); */
-  console.log('hola mundo');
-  $('#mobile-number').intlTelInput();
+  // set endpoint and your access key
+  var access_key = '12ebc4fe9f403f4cf475a5f37de3f5a1';
+  var phone_number = '51928828932';
+  // verify phone number via AJAX call
+  $.ajax({
+    url: 'http://apilayer.net/api/validate?access_key=12ebc4fe9f403f4cf475a5f37de3f5a1' + access_key + '&number=' + phone_number,
+    dataType: 'jsonp',
+    success: function(json) {
+    // Access and use your preferred validation result objects
+      console.log(json.valid);
+      console.log(json.country_code);
+      console.log(json.carrier);
+    }
+  });
 });

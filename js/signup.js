@@ -1,8 +1,10 @@
 $(document).ready(function() {
+  // seleccionando elementos del DOM
   var $email = $('#inputEmail');
   var $password = $('#inputPassword');
   var $checked = $('input[type="checkbox"]');
 
+  // variables booleanas
   var validateEmail = false;
   var validatePassword = false;
   var validateChecked = false;
